@@ -1,0 +1,35 @@
+<div class="main-container" fxLayout="row" fxLayoutAlign="center center">
+
+    <mat-card class="left-box" >
+       <h1>FullFill Your Destiny</h1>
+       <mat-card-subtitle>“The world is a book and those who  do not travel <br> read only one page.”<br>
+        ― St. Augustine</mat-card-subtitle>
+    </mat-card>
+    <mat-card>
+        <mat-card-title fxLayoutAlign="center center">
+            Registration
+        </mat-card-title>
+        <div>
+            <mat-form-field appearance="outline">
+                <mat-label >Enter your email</mat-label>
+                <input class="email-input" matInput placeholder="pat@example.com" [(ngModel)]="email"  required>
+                <mat-icon matSuffix>alternate_email</mat-icon>
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field appearance="outline">
+                <mat-label>Enter your password</mat-label>
+                <input matInput [type]="hide ? 'password' : 'text'" [(ngModel)]="password" >
+                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                    [attr.aria-pressed]="hide">
+                    <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </button>
+            </mat-form-field>
+        </div>
+        <div fxLayoutAlign="space-around center">
+            <button ton mat-raised-button color="primary" (click)="register()" >Register</button>
+            <button ton mat-raised-button color="primary" routerLink="/login" >Login</button> 
+        </div>
+    </mat-card>
+</div>
+

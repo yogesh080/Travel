@@ -1,0 +1,27 @@
+.search-btn{
+    margin-bottom: 12px;
+    height: 45px;
+    width: 12%;
+}
+
+.hero{
+    background-image: url("../../../assets/Image/tom-barrett-M0AWNxnLaMw-unsplash.jpg");
+    padding: 80px 53px 170px 41px;
+    background-size: 1380px;
+    max-width: 100%;
+
+    // width: 94%;
+}
+
+
+
+@media (max-width: 640px) {
+
+
+    .search-area{
+        // flex-direction: column;
+        flex-direction: column;
+
+
+    }
+}

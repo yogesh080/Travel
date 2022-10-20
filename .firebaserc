@@ -1,0 +1,21 @@
+{
+  "targets": {
+    "travel-e8f3a": {
+      "hosting": {
+        "Travel": [
+          "travel-e8f3a"
+        ]
+      }
+    },
+    "travel-ab131": {
+      "hosting": {
+        "Travel": [
+          "travel-ab131"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "travel-ab131"
+  }
+}

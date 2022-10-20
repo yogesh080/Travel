@@ -1,0 +1,34 @@
+<div>
+    <mat-card class="hero">
+        <div className="title">
+            <mat-card-title class='title'>
+                <h1 fxLayoutAlign="space-around center">NEW WAY TO TRAVEL</h1>
+                <mat-card-subtitle fxLayoutAlign="space-around center">
+                    We provide new experience for travel book your travel destination for call assist
+                </mat-card-subtitle>
+            </mat-card-title>
+        </div>
+        <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="40px">
+            <mat-form-field appearance="outline">
+                <mat-label class="label">Where you want to go?</mat-label>
+                <input placeholder='Search your Location' matInput>
+                <mat-icon matSuffix>search</mat-icon>
+                <!-- <mat-hint>Hint</mat-hint> -->
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Enter a date range</mat-label>
+                <mat-date-range-input [rangePicker]="picker">
+                    <input matStartDate placeholder="Start date">
+                    <input matEndDate placeholder="End date">
+                </mat-date-range-input>
+                <mat-hint>MM/DD/YYYY – MM/DD/YYYY</mat-hint>
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-date-range-picker #picker></mat-date-range-picker>
+            </mat-form-field>
+
+            <button mat-raised-button color="primary" class="search-btn">Search</button>
+
+        </div>
+    </mat-card>
+</div>

@@ -1,0 +1,63 @@
+img,
+svg {
+    vertical-align: middle;
+    width: 100%;
+    height: fit-content;
+
+}
+
+::ng-deep {
+
+    .mat-h1,
+    .mat-headline,
+    .mat-typography .mat-h1,
+    .mat-typography .mat-headline,
+    .mat-typography h1 {
+        font: 400 24px/32px Roboto, "Helvetica Neue", sans-serif;
+        letter-spacing: normal;
+        margin: 0 0 0px;
+    }
+}
+
+.container {
+    width: 100%;
+    height: fit-content;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.small_slider {
+    padding-top: 10px;
+}
+
+::ng-deep {
+    element.style {
+        margin-top: 20px;
+        width: 1266px;
+        transition: all 1s ease-in-out 0s;
+    }
+}
+
+::ng-deep {
+
+    .ng-image-slider .ng-image-slider-container .main .main-inner .img-div img,
+    .ng-image-slider .ng-image-slider-container .main .main-inner .img-div video {
+        position: absolute;
+        top: 5px;
+        bottom: 5px;
+        margin: auto;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        right: 0;
+        border-radius: 10px;
+
+    }
+}
+
+.top-destination{
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
