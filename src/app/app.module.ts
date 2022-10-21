@@ -59,6 +59,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import {ReactiveFormsModule } from '@angular/forms';
+import { HeaderComponent } from './components/header/header.component';
+import { StatebyidComponent } from './components/statebyid/statebyid.component';
 
 @NgModule({
   declarations: [
@@ -74,6 +76,8 @@ import {ReactiveFormsModule } from '@angular/forms';
     BodyComponent,
     SliderComponent,
     FooterComponent,
+    HeaderComponent,
+    StatebyidComponent,
   ],
   imports: [
     BrowserModule,

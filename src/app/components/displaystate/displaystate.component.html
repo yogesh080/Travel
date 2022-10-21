@@ -7,7 +7,7 @@
         <mat-card class="mat-card-state">
             
             <div class="state-title" fxLayout="column" fxLayoutAlign="center center" style="margin-top: 2%;">
-                <img class="img" src="{{state.stateImage}}" alt="">
+                <img class="img" src="{{state.stateImage}}" alt=""  (click)=" onclick()">
                 <div class="title-tag">
                     <mat-card-title style="margin-top: 6px; color: wheat;" fxLayoutAlign="space-around center">{{state.stateName}}</mat-card-title>
                     <mat-card-subtitle style="margin-bottom: 1px; font-weight: bold; margin-left: 2%; color: #000000b8;" > {{state.aboutState}}</mat-card-subtitle>
