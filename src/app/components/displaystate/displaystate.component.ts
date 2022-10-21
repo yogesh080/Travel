@@ -1,4 +1,5 @@
 import { Component, OnInit,Input } from '@angular/core';
+import { StateServicesService } from 'src/app/services/stateService/state-services.service';
 
 @Component({
   selector: 'app-displaystate',
@@ -7,12 +8,26 @@ import { Component, OnInit,Input } from '@angular/core';
 })
 export class DisplaystateComponent implements OnInit {
 
-  @Input() StateArray:any;
-  constructor() { }
+  // @Input() StateArray:any;
+  StateList=[];
+  
+  constructor(private getstate: StateServicesService) { }
 
   ngOnInit(): void {
-    console.log("Get all Statess", this.StateArray)
+    this.getAllStates();
+
   }
+
+  getAllStates(){
+    console.log("got all Booook")
+    this.getstate.Getallstate().subscribe((response:any)=>{
+      console.log(response)
+      
+      this.StateList = response.data;
+      console.log(this.StateList)
+
+    })
   
 
+}
 }
