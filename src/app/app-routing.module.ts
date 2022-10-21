@@ -4,6 +4,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ForgetPasswordComponent } from './components/forget-password/forget-password.component';
 import { LoginsComponent } from './components/logins/logins.component';
 import { RegistrationComponent } from './components/registration/registration.component';
+import { StatebyidComponent } from './components/statebyid/statebyid.component';
 import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
 
 const routes: Routes = [
@@ -11,7 +12,7 @@ const routes: Routes = [
   { path: 'login', component: LoginsComponent },
   { path: 'forgetpassword', component: ForgetPasswordComponent },
   { path: 'varify-email', component: VerifyEmailComponent },
-
+  {path:'state', component:StatebyidComponent},
 
   {
     path: 'dashboard',
