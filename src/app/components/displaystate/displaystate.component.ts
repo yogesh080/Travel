@@ -9,7 +9,7 @@ import { StateServicesService } from 'src/app/services/stateService/state-servic
 export class DisplaystateComponent implements OnInit {
 
   // @Input() StateArray:any;
-  StateList=[];
+  StateList:any;
   
   constructor(private getstate: StateServicesService) { }
 

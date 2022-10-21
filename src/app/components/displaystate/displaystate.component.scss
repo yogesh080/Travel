@@ -6,10 +6,8 @@
 }
 
 .state-tag{
+    
     font-size: 26px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
 }
@@ -22,6 +20,13 @@
 .title-tag{
     position: absolute;
     bottom: 0px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.322);
+
 }
 
 .mat-card-state{
