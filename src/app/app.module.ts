@@ -61,6 +61,7 @@ import { HttpClientModule } from '@angular/common/http';
 import {ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './components/header/header.component';
 import { StatebyidComponent } from './components/statebyid/statebyid.component';
+import { MatMenuModule} from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -78,6 +79,7 @@ import { StatebyidComponent } from './components/statebyid/statebyid.component';
     FooterComponent,
     HeaderComponent,
     StatebyidComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -116,7 +118,9 @@ import { StatebyidComponent } from './components/statebyid/statebyid.component';
     MdbValidationModule,
     RouterModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatButtonModule,
+    MatMenuModule
     
   ],
   providers: [],
