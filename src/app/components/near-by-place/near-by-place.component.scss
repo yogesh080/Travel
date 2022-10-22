@@ -1,0 +1,39 @@
+
+
+
+.display-container{
+    // max-width: 100%;
+    // border: solid green 2px;
+    width: auto;
+    flex-flow: wrap;
+}
+
+.state-tag{
+    padding: 5px 0px 2px 12px;
+    margin-top: 7px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: none;
+
+}
+
+
+.img{
+    border-radius: 7px;
+    
+}
+.title-tag{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.mat-card-state{
+    padding: 0px;
+}

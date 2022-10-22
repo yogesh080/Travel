@@ -62,6 +62,7 @@ import {ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './components/header/header.component';
 import { StatebyidComponent } from './components/statebyid/statebyid.component';
 import { MatMenuModule} from '@angular/material/menu';
+import { NearByPlaceComponent } from './components/near-by-place/near-by-place.component';
 
 @NgModule({
   declarations: [
@@ -79,6 +80,7 @@ import { MatMenuModule} from '@angular/material/menu';
     FooterComponent,
     HeaderComponent,
     StatebyidComponent,
+    NearByPlaceComponent,
     
   ],
   imports: [
